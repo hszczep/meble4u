@@ -31,7 +31,7 @@ export default function CartSheet() {
         <div className="mt-4 space-y-4 overflow-y-auto max-h-[60vh] pr-1">
           {items.map((item) => (
             <div key={item.id} className="flex gap-3 items-center border-b pb-3">
-              <img src={item.image} className="w-16 h-16 rounded-md object-cover" />
+              <img alt={`${item.name}-${item.id}`} src={item.image} className="w-16 h-16 rounded-md object-cover" />
               <div className="flex-1">
                 <p className="font-semibold">{item.name}</p>
                 <p className="text-sm text-muted-foreground">

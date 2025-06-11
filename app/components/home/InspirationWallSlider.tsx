@@ -42,7 +42,7 @@ export default function InspirationWallSlider() {
           <img
             key={i}
             src={`/image${++i}.svg`}
-            alt=""
+            alt={`wall slider - image${++i}`}
             className={cn(
               "rounded-lg object-cover",
               i % 4 === 0 && "h-60 w-60",

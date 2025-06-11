@@ -17,11 +17,11 @@ type ProductProps = {
 
 export default function Product({ product }: ProductProps) {
   const { addToCart } = useCartStore();
-console.log(product.image)
+
   return (
     <article key={product.id} className='relative group rounded overflow-hidden'>
       <figure className="relative">
-        <img src={product.image} className="w-full object-cover h-64"/>
+        <img alt={`Product-${product.name}`} src={product.image} className="w-full object-cover h-64"/>
         {product?.label && 
           <span className={
             `absolute top-3 right-3 text-white text-xs w-[48px] h-[48px] rounded-full flex items-center justify-center
@@ -34,15 +34,15 @@ console.log(product.image)
           <button onClick={() => addToCart(product)} className='bg-white text-[#B88E2F] text-sm px-4 py-1 rounded mb-2 cursor-pointer'>Add to cart</button>
           <div className='text-sm flex gap-4'>
             <span className='flex gap-2'>
-              <img src={ShareIcon} />
+              <img alt="ShareIcon" src={ShareIcon} />
               Share
             </span>
             <span className='flex gap-2'>
-              <img src={CompareIcon} />
+              <img alt="CompareIcon" src={CompareIcon} />
               Compare
             </span>
             <span className='flex gap-2'>
-              <img src={LikeIcon} />
+              <img alt="LikeIcon" src={LikeIcon} />
               Like
             </span>
           </div>
