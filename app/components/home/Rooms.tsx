@@ -9,7 +9,7 @@ export default function Rooms() {
     <section className="text-center py-4">
       <header className="mb-8">
         <h2 className="text-3xl font-bold">Browse The Range</h2>
-        <p className="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p className="text-gray-500">Discover a wide selection of high-quality furniture designed to suit every room.</p>
       </header>
       <div className='flex flex-col md:flex-row gap-8 md:gap-8 items-center justify-center'>
         <article className='space-y-2'>

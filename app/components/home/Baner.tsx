@@ -22,7 +22,7 @@ export default function Baner() {
           </header>
 
           <p className="text-gray-600 text-sm md:text-base mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+            Explore our latest furniture collection, where modern design meets everyday comfort. Create a stylish and functional home that reflects your unique taste.        
           </p>
 
           <Link to="/shop?label=new" className="bg-yellow-800 text-white text-sm px-6 py-3 rounded hover:bg-yellow-700 transition cursor-pointer">
